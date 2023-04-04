@@ -1,17 +1,15 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Companies } from "@/themes/components/Companies";
+import { LandingPage } from "@/themes/components/Hero";
+import { Navbar } from "@/themes/components/Navbar";
+import { Box, Container, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Home = () => {
   return (
-    <Box
-      as="main"
-      bgColor="base"
-      h="100vh"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Text>Test</Text>
-    </Box>
+    <Container maxW="container.xl">
+      <Navbar />
+      <LandingPage />
+    </Container>
   );
 };
 
