@@ -25,7 +25,7 @@ export const Navbar = () => {
     },
   ];
   return (
-    <Box as="nav" display="flex" justifyContent="space-between">
+    <Box as="nav" display="flex" justifyContent="space-between" marginTop={5}>
       <Flex align="center" gap={6}>
         <HStack pr={10}>
           <svg
@@ -39,7 +39,6 @@ export const Navbar = () => {
             <path d="M41 25L23.5 50L6 25L23.5 0" fill="#8C82FC" />
           </svg>
           <Text
-            fontFamily="sourceSansPro"
             fontSize="18px"
             fontWeight={700}
             lineHeight="22.63px"
@@ -53,13 +52,13 @@ export const Navbar = () => {
             _hover={{
               textDecoration: "none",
             }}
+            key={el.name}
           >
             <Text
               fontSize="16px"
               lineHeight="20.11px"
               color={el.color}
               fontWeight={el.isBold ? "600" : "400"}
-              fontFamily="sourceSansPro"
             >
               {el.name}
             </Text>
@@ -68,7 +67,6 @@ export const Navbar = () => {
       </Flex>
       <HStack spacing={8}>
         <Text
-          fontFamily="dmSans"
           fontSize="16px"
           lineHeight="20.83px"
           color="secondary"
@@ -88,7 +86,6 @@ export const Navbar = () => {
           backgroundColor="#8C82FC"
         >
           <Text
-            fontFamily="dmSans"
             fontSize="16px"
             lineHeight="20.83px"
             color="white"

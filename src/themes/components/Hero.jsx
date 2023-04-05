@@ -24,6 +24,7 @@ import Women from "@/assets/women.png";
 import CardI from "@/assets/cardI.png";
 import Star from "@/assets/star.png";
 import Check from "@/assets/check.svg";
+import HeaderImg from "@/assets/header_img.svg";
 
 export const LandingPage = () => {
   const servicesDefinition = [
@@ -58,7 +59,7 @@ export const LandingPage = () => {
     <>
       <Flex align="center" justify="space-between" marginTop={100}>
         <VStack align="start" ms={75} spacing={6}>
-          <Text fontFamily="Manrope" fontWeight={700} color="#8C82FC">
+          <Text fontWeight={700} color="#8C82FC">
             S U X Z M A K E I T E A S Y
           </Text>
           <Text
@@ -66,7 +67,6 @@ export const LandingPage = () => {
             lineHeight="62.5px"
             color="secondary"
             w="15ch"
-            fontFamily="Manrope"
             fontWeight="bold"
           >
             Find Your Way Of Success
@@ -104,14 +104,10 @@ export const LandingPage = () => {
             position="absolute"
           >
             <CardBody>
-              <Text
-                fontFamily="sourceSansPro"
-                fontWeight="semibold"
-                color="#BAB8D2"
-              >
+              <Text fontWeight="semibold" color="#BAB8D2">
                 Member
               </Text>
-              <Text fontFamily="sourceSansPro" fontWeight="bold" color="black">
+              <Text fontWeight="bold" color="black">
                 70,200
               </Text>
               <HStack>
@@ -119,28 +115,20 @@ export const LandingPage = () => {
               </HStack>
             </CardBody>
           </Card>
+          <Box pos="absolute" zIndex="-1" top="0">
+            <Image src={HeaderImg} />
+          </Box>
         </Box>
       </Flex>
       <Box w="full" p={8} alignItems="center" mb={4}>
         <VStack align="start">
-          <Text
-            fontFamily="dmSans"
-            fontWeight="bold"
-            fontSize="18px"
-            lineHeight="23.44px"
-          >
+          <Text fontWeight="bold" fontSize="18px" lineHeight="23.44px">
             Learning
           </Text>
-          <Text
-            fontFamily="dmSans"
-            fontWeight="bold"
-            fontSize="35px"
-            w="25ch"
-            lineHeight="40px"
-          >
+          <Text fontWeight="bold" fontSize="35px" w="25ch" lineHeight="40px">
             Online Learning Platform International Curriculum
           </Text>
-          <Text fontFamily="dmSans" fontSize="18px" lineHeight="23.44px">
+          <Text fontSize="18px" lineHeight="23.44px">
             Study and understand the material <br></br> class is more relaxed
             without time limit.
           </Text>
@@ -163,8 +151,12 @@ export const LandingPage = () => {
                   </Stack>
                 </CardBody>
                 <CardFooter>
-                  <Button variant="solid" colorScheme="blue">
-                    Buy now
+                  <Button
+                    variant="solid"
+                    color="white"
+                    backgroundColor="#44E4C9"
+                  >
+                    See Class
                   </Button>
                 </CardFooter>
               </Card>
@@ -186,8 +178,12 @@ export const LandingPage = () => {
                   </Stack>
                 </CardBody>
                 <CardFooter>
-                  <Button variant="solid" colorScheme="blue">
-                    Buy now
+                  <Button
+                    variant="solid"
+                    color="white"
+                    backgroundColor="#44E4C9"
+                  >
+                    See Class
                   </Button>
                 </CardFooter>
               </Card>
@@ -214,8 +210,12 @@ export const LandingPage = () => {
                   </Stack>
                 </CardBody>
                 <CardFooter>
-                  <Button variant="solid" colorScheme="blue">
-                    Buy now
+                  <Button
+                    variant="solid"
+                    color="white"
+                    backgroundColor="#44E4C9"
+                  >
+                    See Class
                   </Button>
                 </CardFooter>
               </Card>
@@ -237,8 +237,12 @@ export const LandingPage = () => {
                   </Stack>
                 </CardBody>
                 <CardFooter>
-                  <Button variant="solid" colorScheme="blue">
-                    Buy now
+                  <Button
+                    variant="solid"
+                    color="white"
+                    backgroundColor="#44E4C9"
+                  >
+                    See Class
                   </Button>
                 </CardFooter>
               </Card>
@@ -248,15 +252,15 @@ export const LandingPage = () => {
       </Box>
       <Box w="full" p={8} alignItems="center" mb={5}>
         <SimpleGrid columns={2} spacing="55px">
-          <Box height="80px" pos="relative" borderRadius={15}>
+          <Box height="80px" borderRadius={15}>
             <Image src={Women} />
             <Card
               rounded="10px"
               shadow="0px 15px 30px 0px rgba(0, 0, 0, 0.1)"
               maxW="292px"
               pos="absolute"
-              bottom="-550%"
-              right="10"
+              left="280px"
+              bottom="-400px"
             >
               <CardBody>
                 <Flex align="start" justify="space-between">
@@ -280,181 +284,36 @@ export const LandingPage = () => {
             </Card>
           </Box>
           <Box height="80px">
-            <Text
-              fontFamily="dmSans"
-              fontWeight="bold"
-              fontSize="18px"
-              lineHeight="23.44px"
-            >
+            <Text fontWeight="bold" fontSize="18px" lineHeight="23.44px">
               Learning
             </Text>
-            <Text
-              fontFamily="dmSans"
-              fontWeight="bold"
-              fontSize="35px"
-              w="25ch"
-              lineHeight="40px"
-            >
+            <Text fontWeight="bold" fontSize="35px" w="25ch" lineHeight="40px">
               Online Learning Platform International Curriculum
             </Text>
-            <Text fontFamily="dmSans" fontSize="18px" lineHeight="23.44px">
+            <Text fontSize="18px" lineHeight="23.44px">
               Study and understand the material <br></br> class is more relaxed
               without time limit.
             </Text>
             <HStack mt="5">
               <Image src={Check} />
-              <Text fontFamily="dmSans" fontSize="18px" lineHeight="23.44px">
+              <Text fontSize="18px" lineHeight="23.44px">
                 Study and produce creation to get a job
               </Text>
             </HStack>
             <HStack mt="5">
               <Image src={Check} />
-              <Text fontFamily="dmSans" fontSize="18px" lineHeight="23.44px">
+              <Text fontSize="18px" lineHeight="23.44px">
                 Up to date material and created by expert creators
               </Text>
             </HStack>
             <HStack mt="5">
               <Image src={Check} />
-              <Text fontFamily="dmSans" fontSize="18px" lineHeight="23.44px">
+              <Text fontSize="18px" lineHeight="23.44px">
                 Complete classes and projects and get a certificate from us
               </Text>
             </HStack>
           </Box>
         </SimpleGrid>
-      </Box>
-      <Box
-        w="full"
-        h="191px"
-        display="grid"
-        gridTemplateColumns="repeat(3, 1fr)"
-        p={8}
-        alignItems="center"
-        bg="#203271"
-        gap={4}
-        mb={4}
-        pos="absolute"
-        bottom={-650}
-      >
-        <HStack align="start" spacing={4}>
-          <VStack align="start">
-            <Text
-              color="white"
-              fontFamily="dmSans"
-              fontWeight="bold"
-              fontSize="18px"
-              lineHeight="23.44px"
-            >
-              Company
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Home
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Blogs
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Careers
-            </Text>
-          </VStack>
-        </HStack>
-        <HStack align="start" spacing={4}>
-          <VStack align="start">
-            <Text
-              color="white"
-              fontFamily="dmSans"
-              fontWeight="bold"
-              fontSize="18px"
-              lineHeight="23.44px"
-            >
-              Company
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Home
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Blogs
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Careers
-            </Text>
-          </VStack>
-        </HStack>
-        <HStack align="start" spacing={4}>
-          <VStack align="start">
-            <Text
-              color="white"
-              fontFamily="dmSans"
-              fontWeight="bold"
-              fontSize="18px"
-              lineHeight="23.44px"
-            >
-              Company
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Home
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Blogs
-            </Text>
-            <Text
-              color="rgba(255, 255, 255, 0.8)"
-              fontFamily="dmSans"
-              fontSize="16px"
-              fontWeight="normal"
-              lineHeight="26px"
-            >
-              Careers
-            </Text>
-          </VStack>
-        </HStack>
       </Box>
     </>
   );
