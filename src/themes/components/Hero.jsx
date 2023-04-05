@@ -122,7 +122,12 @@ export const LandingPage = () => {
       </Flex>
       <Box w="full" p={8} alignItems="center" mb={4}>
         <VStack align="start">
-          <Text fontWeight="bold" fontSize="18px" lineHeight="23.44px">
+          <Text
+            fontWeight="bold"
+            fontSize="18px"
+            color="#8C82FC"
+            lineHeight="23.44px"
+          >
             Learning
           </Text>
           <Text fontWeight="bold" fontSize="35px" w="25ch" lineHeight="40px">
@@ -284,15 +289,20 @@ export const LandingPage = () => {
             </Card>
           </Box>
           <Box height="80px">
-            <Text fontWeight="bold" fontSize="18px" lineHeight="23.44px">
-              Learning
+            <Text
+              fontWeight="bold"
+              color="#8C82FC"
+              fontSize="18px"
+              lineHeight="23.44px"
+            >
+              About Us
             </Text>
             <Text fontWeight="bold" fontSize="35px" w="25ch" lineHeight="40px">
-              Online Learning Platform International Curriculum
+              We Help Improve Your Work Experience
             </Text>
-            <Text fontSize="18px" lineHeight="23.44px">
-              Study and understand the material <br></br> class is more relaxed
-              without time limit.
+            <Text fontSize="18px" mt="4" lineHeight="23.44px">
+              We help you to increase self-confidence <br /> and train yourself
+              in a direction.
             </Text>
             <HStack mt="5">
               <Image src={Check} />
